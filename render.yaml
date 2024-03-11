@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: jarvis-md
+    env: node
+    branch: main
+    repo: https://github.com/Kiranxer/whatsapp-bot-md.git
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: SESSION_ID
+        sync: false
+      - key: WARN_COUNT
+        value: 3
+      - key: AUTO_STATUS_VIEWS
+        value: true
+      - key: MEDIA_DATA
+        value: ʟɪꜱᴛ ᴍᴇɴᴜ;ᴊᴀʀᴠɪꜱ-ᴍᴅ;https://i.imgur.com/ltPPMTh.jpeg
+      - key: HANDLER
+        value: 🧃
+      - key: WORK_TYPE
+        value: private
+      - key: SERVER
+        value: render
+      - key: STICKER_PACKNAME
+        value: ;kiranXer
+      - key: AUDIO_DATA
+        value: ʟᴏᴋɪ-xᴇʀ;ᴊᴀʀᴠɪꜱ;https://i.imgur.com/VgxJeCm.jpeg
+      - key: SUDO
+        value: 919539060020
+      - key: SERVERURL
+        value:
+      - key: DATABASE_URL
+        sync: false
